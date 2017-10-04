@@ -30,7 +30,7 @@ public class HelloWorldClient {
   private static final Logger logger = Logger.getLogger(HelloWorldClient.class.getName());
 
   private final ManagedChannel channel;
-  private final GreeterGrpc.GreeterBlockingStub blockingStub;
+  protected final GreeterGrpc.GreeterBlockingStub blockingStub;
 
   /** Construct client connecting to HelloWorld server at {@code host:port}. */
   public HelloWorldClient(String host, int port) {
